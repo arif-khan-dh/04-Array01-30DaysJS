@@ -1,0 +1,77 @@
+html {
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --data-width: 650px;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(34, 33, 33, 0.9);
+}
+
+.container {
+    position: relative;
+    display: flex;
+}
+
+.empty {
+    width: var(--data-width);
+    height: 100px;
+}
+
+.data {
+    position: fixed;
+    width: var(--data-width);
+    height: 100vh;
+    font-size: 0.85em;
+    display: flex;
+    flex-flow: column nowrap;
+    background: rgba(230, 227, 227, 0.9);
+    overflow: auto;
+}
+
+.data > div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+  
+.exercise {
+    margin: 0 auto;
+    padding-top: 1.4rem;
+}
+
+.question-container {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+  }
+
+ques-el {
+    display: block;
+    width: 600px;
+    font-size: .85em; 
+    padding: 1rem 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+}
+
+ques-el:not(:first-child) {
+    margin-top: 1rem;
+}
+
